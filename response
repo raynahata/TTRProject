@@ -1,0 +1,52 @@
+
+import openai
+import os
+import json
+
+client = openai.OpenAI(
+  api_key="sk-whnUEfTKRKbE8-73nOgpcg",
+  base_url="https://cmu.litellm.ai",
+)
+
+
+def generate_conversational_phrase(prompt_template_file, data_file):
+    # Read the prompt template from the text file
+    with open(prompt_template_file, 'r') as file:
+        prompt_template = file.read()
+
+    # Read the data from the JSON file
+    with open(data_file, 'r') as file:
+        data = json.load(file)
+
+    # Format the prompt using the data
+    prompt = prompt_template.format(
+        expected_action=data.get('expected_action', 'Unknown action'),
+        actual_action=data.get('actual_action', 'Unknown action'),
+        what_went_wrong=data.get('what_went_wrong', 'No details provided')
+    )
+
+    messages=[{"role": "system", "content": prompt}]
+
+    # Call the OpenAI API
+    response = client.chat.completions.create(
+        model="gpt-4o", # Choose the appropriate GPT model
+        messages = messages,
+        max_tokens=100, # You can adjust the max tokens as needed
+        temperature=0.7, # Controls the creativity of the response
+        n=1,
+        stop=None
+    )
+
+    # Extract the generated conversational phrase
+    # conversational_phrase = response.choices[0].text.strip()
+    print("Total Tokens:", response.usage.total_tokens)
+    return  response.choices[0].message.content
+
+# Example usage
+prompt_template_file = '/Users/raynahata/Desktop/TTR/prompt'
+data_file = '/Users/raynahata/Desktop/TTR/occurances'
+
+# Generate the conversational phrase
+conversational_phrase = generate_conversational_phrase(prompt_template_file, data_file)
+print("Conversational Phrase:", conversational_phrase)
+

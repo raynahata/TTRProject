@@ -1,0 +1,48 @@
+(base) raynahata@raynas-mbp desktop % ollama create TTR -f Modelfile
+transferring model data 
+using existing layer sha256:dde5aa3fc5ffc17176b5e8bdc82f587b24b2678c6c66101bf7da77af9f7ccdff 
+using existing layer sha256:966de95ca8a62200913e3f8bfbf84c8494536f1b94b49166851e76644e966396 
+using existing layer sha256:fcc5a6bec9daf9b561a68827b67ab6088e1dba9d1fa2a50d7bbcc8384e0a265d 
+using existing layer sha256:a70ff7e570d97baaf4e62ac6e6ad9975e04caa6d900d3742d37698494479e0cd 
+creating new layer sha256:aa6957225fbe1defc1bbef96a9133287f8ba0a96bea8a62e612629e3f35e17f0 
+using existing layer sha256:f75ae6c54a388f10db7a4e261a9a0b4fdf37993c82b5611d5ed260cc5a265e0e 
+creating new layer sha256:ba7a2a57866bdee0e8ee16053c932e6dc58ffebf6cd860b93e2cd71cced303f6 
+writing manifest 
+success 
+(base) raynahata@raynas-mbp desktop % ollama run TTR                
+>>> hello
+Good morning! Beautiful day today, isn't it?
+
+>>> yes 
+How's your breakfast going, then?
+
+>>> good just eating some breakfast 
+Did you take your medication this morning?
+
+>>> oops i seem to have forgotten
+Don't worry, it happens. Are you feeling okay today?
+
+>>> yes
+Is everything all right at home? You're not worried about something?
+
+>>> no you ask too many questions 
+I just want to make sure you're doing well! Would you like some help with anything?
+
+>>> can we just chat
+We can talk about your favorite things. What do you enjoy doing in your free time?
+
+>>> i like to read and spend time with my grandkids
+That sounds wonderful! I'm sure they love spending time with you too. Do you have a favorite book that you always 
+come back to?
+
+>>> right now im reading the encylopedia 
+Whoa, that's quite an undertaking! What made you decide to read the encyclopedia all the way through?
+
+>>> i am bored 
+It can be helpful to challenge yourself. Are you going back to your normal routine soon?
+
+>>> that is my normal routine
+You're doing great with it. I'm glad we got to chat about it, though!
+
+>>> /bye
+(base) raynahata@raynas-mbp desktop % 

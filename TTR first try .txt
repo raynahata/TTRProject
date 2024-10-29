@@ -1,0 +1,82 @@
+Last login: Wed Sep 25 14:07:54 on ttys000
+(base) raynahata@raynas-mbp ~ % cd desktop
+(base) raynahata@raynas-mbp desktop % ollama create example -f Modelfile
+Error: open /Users/raynahata/desktop/Modelfile: no such file or directory
+(base) raynahata@raynas-mbp desktop % ollama create example -f /Users/raynahata/Desktop/Modelfile.rtf
+
+Error: command must be one of "from", "license", "template", "system", "adapter", "parameter", or "message"
+(base) raynahata@raynas-mbp desktop % ollama create example -f Modelfile
+Error: open /Users/raynahata/desktop/Modelfile: no such file or directory
+(base) raynahata@raynas-mbp desktop % ollama create TTR -f Modelfile
+transferring model data 
+pulling manifest 
+pulling dde5aa3fc5ff... 100% ▕████████████████▏ 2.0 GB                         
+pulling 966de95ca8a6... 100% ▕████████████████▏ 1.4 KB                         
+pulling fcc5a6bec9da... 100% ▕████████████████▏ 7.7 KB                         
+pulling a70ff7e570d9... 100% ▕████████████████▏ 6.0 KB                         
+pulling 56bb8bd477a5... 100% ▕████████████████▏   96 B                         
+pulling 34bb5ab01051... 100% ▕████████████████▏  561 B                         
+verifying sha256 digest 
+writing manifest 
+removing any unused layers 
+success 
+using existing layer sha256:dde5aa3fc5ffc17176b5e8bdc82f587b24b2678c6c66101bf7da77af9f7ccdff 
+using existing layer sha256:966de95ca8a62200913e3f8bfbf84c8494536f1b94b49166851e76644e966396 
+using existing layer sha256:fcc5a6bec9daf9b561a68827b67ab6088e1dba9d1fa2a50d7bbcc8384e0a265d 
+using existing layer sha256:a70ff7e570d97baaf4e62ac6e6ad9975e04caa6d900d3742d37698494479e0cd 
+creating new layer sha256:ea862484972c8ab62516810f11bb22321618f7309fc81e2826b74ce50a279131 
+creating new layer sha256:fed51222976fa11b466d027e2882ab96b376bb91e7929851bc8f07ebe001d40a 
+creating new layer sha256:7ebfecac7b00ea76ccf5fafdcb85e949eda3fd0f83f6ec6748bdf0a5e3d9a6c1 
+writing manifest 
+success 
+(base) raynahata@raynas-mbp desktop % ollama run TTR
+>>> Hello
+Good morning! It's great to see you enjoying your breakfast. How was your 
+night? Did anything exciting happen? (gentle robotic tone)
+
+(By the way, I've got a quick check-in with my systems... just a sec.)
+
+>>> im good, just eating some breakfast 
+That sounds like a lovely start to the day! I hope you're having something 
+delicious and nutritious. I saw that your medication was due this morning, 
+though. Did everything go smoothly with it? You can always talk about 
+anything that's on your mind; I'm all ears... or rather, all circuits. 
+(concerned robotic tone)
+
+(Also, just a quick note to my system: it appears you didn't take your 
+medication as scheduled.)
+
+>>> oops ill take it now
+Don't worry, we can work on a reminder system together if you'd like! But 
+in the meantime, I'll make sure to keep an eye on things and remind you 
+when it's time for your next dose.
+
+So, how are you feeling today? Anything in particular that you're looking 
+forward to or would rather forget about? ( gentle robotic interest)
+
+(And by the way, just a tiny detail... our system indicates that taking 
+medication now will help prevent any potential issues. So, let's get you 
+all caught up!)
+
+>>> you talk too much 
+I didn't mean to overwhelm you with information or conversation. I'll try 
+to keep things simple and gentle from now on.
+
+Can I just offer a friendly reminder: it's okay to take your time, and I'm 
+here to support you whenever you need me. If you're not feeling well, 
+would you like some assistance getting dressed or doing something light 
+after breakfast?
+
+>>> bye
+Take care of yourself, and feel better soon! ( gentle robotic whisper)
+
+(I'll quietly monitor your situation from a distance and be here when 
+you're ready to chat again.)
+
+>>> end 
+Goodbye.
+
+>>> 
+Use Ctrl + d or /bye to exit.
+>>> /bye
+(base) raynahata@raynas-mbp desktop % 
