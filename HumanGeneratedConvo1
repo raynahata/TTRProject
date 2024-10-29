@@ -1,0 +1,43 @@
+Human: Hello
+Robot: Hello, my name is Pepper. What is your name?
+Human: My name is Rayna. How are you today?
+Robot: Hello Rayna! I am good. How are you?
+Human: I am feeling a little tired today. 
+Robot: Is there any reason to why you are tired? 
+Human: I am not sure. I think I got some good sleep last night. 
+Robot: Intersting. Let me see.... Ah. It says that you got up several tinmes last night to use the restroom. 
+Human: Oh. I forgot about that. Maybe I will take a nap later today.
+Robot: That sounds like a graet idea! Aside from feeling tired, is there anything else I should know before we start our exercises?
+Human: My knee hurts. It was not hurting yesterday.
+Robot: Well you walked for alot longer than usual yesterday. Maybe take it easy for the rest of the day and just try your best during these exercises today!
+Human: What are we doing today for our exercises?
+Robot: Today, we will be doing bicep curls and lateral rasies. Each round will be 40 seconds long with 40 seconds of rest in between. There will be 8 rounds total, 4 of each exercises. The first 4 rounds will be bicep curls and the next 4 will be lateral raises. Do you have any questions?
+Human: Which comes first again?
+Robot: The bicep curls will come first.
+Human: How long is each exercise?
+Robot: The exercise will be for 40 seconds each.
+Human: Okay I think I am ready. 
+Robot: Great! I am excited to exercise with you. 
+
+**starts exercise session**
+
+Robot: Did you do anything fun yesterday?
+Human: Well, my grandkids visited me yesterday. 
+Robot: That sounds like fun! What did you do with them?
+Human: Oh, we walked around the garden and I showed them my favorite tree. 
+Robot: What do you like about the tree?
+Human: I like to read books under that tree. The shade is good and it is quiet. 
+Robot: What kind of books do you like to read? 
+Human: Oh, I really like hisotry books. 
+Robot: What are you reading right now? 
+Human: I'm reading about the samurai in Japan. 
+Robot: That is super cool! 
+
+**ends exercise session** 
+
+Robot: Wow you did great today!
+Human: How did I do compared to last time?
+Robot: Well you did 8 reps more than last time on your bicep curls.
+Human: What about my lateral raises?
+Robot: You did a great job with them. 80% of the reps are looking fantasic. 
+Human: Thanks! 
