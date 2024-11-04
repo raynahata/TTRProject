@@ -9,7 +9,8 @@ def generate_robot_response(user_input):
     
     return response
 
-# Example usage
-user_message = "How can I move the robot from point A to point B?"
-log_conversation("User", user_message)  # Log the user's message
-robot_reply = generate_robot_response(user_message)  # Generate and log robot's response
+
+# # Example usage
+# user_message = "How can I move the robot from point A to point B?"
+# log_conversation("User", user_message)  # Log the user's message
+# robot_reply = generate_robot_response(user_message)  # Generate and log robot's response
