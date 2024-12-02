@@ -1,0 +1,5 @@
+{
+	"expected_behavior": "Finding the bananas in the pantry",
+	"mistake": "Repeatedly opening the same drawer",
+	"suggestion": "May need a reminder that bananas are in the pantry"
+}

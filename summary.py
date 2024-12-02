@@ -12,7 +12,7 @@ def summarize_text(text):
         # Generate summary using OpenAI API
         response = client.chat.completions.create(
             model="gpt-4o",  # Adjust model based on needs
-            messages=[{"role": "user", "content": f"Summarize the following csv file:\n\n{text}"}],
+            messages=[{"role": "user", "content": f"Using the record of the conversation, write a summary of what the interactions about. If they forgot something, make note of that. :\n\n{text}"}],
             max_tokens=50,  # Adjust max tokens for brevity of summary
             temperature=0.5
         )
